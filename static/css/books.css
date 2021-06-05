@@ -1,0 +1,425 @@
+*
+{
+    margin:0;
+    padding:0;
+    border-style:border-box;
+    background:#ffffff;
+}
+
+.header
+{
+    width:100%;
+    height:10%;
+    position:absolute;
+    display:flex;
+    
+}
+
+.menu1
+{
+    width:30%;
+    height:100%;
+    position:relative;
+    display:flex;
+    margin-left:20px;
+    margin-top:10px;
+
+}
+
+    .submenu
+    {
+        width:40%;
+        height:60%;
+        background:#f54d0b;
+        color:white;
+        border:2px solid white;
+        border-radius:20px;
+        display:flex;
+        justify-content:center;
+        padding-top:10px;
+    }
+
+.menu2
+{
+    width:50%;
+    height:100%;
+    position:relative;
+    display:flex;
+    margin-left:20px;
+    line-height:60px;
+
+}
+
+/* Main menu styling will be started from here */
+    .navbar li
+    {
+        display:inline;
+        margin:25px;
+    }
+
+    .navbar li a
+    {
+        color:#000000;
+        text-decoration:none;
+        padding:10px 12px;
+        
+    }
+
+    .navbar li a .home 
+    {
+        background-color:#f54d0b;
+        color:#ffffff;
+        text-decoration:underline;
+        border-radius:16px;
+    }
+
+    .navbar li a:hover, .navbar li a:active
+    {
+        background-color:#f54d0b;
+        color:#ffffff;
+        text-decoration:underline;
+        border-radius:16px;
+    }
+
+  
+
+
+.menu3
+{
+    width:20%;
+    height:100%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    line-height:40px;
+}
+
+    .button1, .button2
+    {
+        width:35%;
+        height:50%;
+        text-align:center;
+        margin:5px 5px;
+        background:#f54d0b;
+        color:#ffffff;
+        cursor:pointer;
+    }
+
+    
+    
+/* nav styling ended over here */
+
+/* from here the page content style will be proceeded*/
+
+.slider
+{
+    width:100%;
+    height:50%;
+    margin-top:100px;
+    position:absolute;
+    display:flex;
+    background-image:url('../img/library1.jpeg');
+    animation:slide 9s infinite linear;
+}
+
+    @keyframes slide
+    {
+        0%{background-image:url('../img/library1.jpeg');}
+        35%{background-image:url('../img/library2.jpeg');}
+        75%{background-image:url('../img/library3.jpeg');}
+    }
+
+.main
+{
+    width:100%;
+    height:100%;
+    position:absolute;
+    margin-top:450px;
+    display:grid;
+    grid-template-rows:1125px 200px;
+    grid-template-columns:200px 1fr 250px;
+    grid-gap:5px;
+}
+
+.leftpanel
+{
+    background:lightgrey;
+    height:40%;
+    border-radius:5px;
+    color:#000000;
+}
+
+.leftpanel h3
+{
+    margin-left:5px;
+}
+
+.list
+{
+    width:92%;
+    height:97%;
+    margin-left:8px;
+    margin-top:4px;
+}
+
+.list li
+{
+    margin:5px 5px;
+    padding:8px 5px;
+    list-style:none;
+
+}
+
+.list li:hover
+{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+/* Main content styling will start from here */
+
+.maincontent
+{
+    background:lightgrey;
+    border-radius:5px;
+    
+}
+
+.headline
+{
+    margin-top:10px;
+    margin-left:20px;
+    width:95%;
+    height:3%;
+    background:#ffffff;
+}
+/* Main content styling will end from here */
+.headline h3
+{
+    padding-left:10px;
+    padding-top:5px;
+}
+
+.article1
+{
+    margin-left:20px;
+    width:95%;
+    height:350px;
+    background:white;
+    display:flex;
+}
+
+.article2, .article3
+{
+    margin-left:20px;
+    width:95%;
+    height:350px;
+    background:white;
+    margin-top:10px;
+    display:flex;
+}
+
+.img1, .img2, .img3
+{
+    width:25%;
+    height:45%;
+}
+
+.img1
+{
+    background-image:url('../img/content1.jpg');
+    background-size:100% 100%;
+}
+
+.img2
+{
+    background-image:url('../img/book2.jpeg');
+    background-size:100% 100%;
+}
+
+.img3
+{
+    background-image:url('../img/book3.jpg');
+    background-size:100% 100%;
+}
+
+.read1, .read2, .read3
+{
+    width:100%;
+    height:100%;
+    position:relative;
+    margin-left:10px;
+}
+
+.write1, .write2, .write3
+{
+    width:100%;
+    height:80%;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+.more1, .more2, .more3
+{
+    width:15%;
+    height:15%;
+    position:absolute;
+    background:blue;
+    color:white;
+    bottom:12px;
+    right:30px;
+}
+
+
+/* Main content styling will end from here */
+
+.rightpanel
+{
+    background:lightgrey;
+    height:20%;
+}
+
+.rightbox
+{
+    background:white;
+    height:95%;
+    width:97%;
+    margin-top:5px;
+    margin-left:5px;
+    color:#000000;
+}
+
+.rightbox input[type=text]
+{
+    margin-top:15px;
+    margin-left:5px;
+    padding:8px 6px;
+    border:1px solid grey;
+    height:98%;
+    width:100%;
+}
+.rightbox input[type=email]
+{
+    margin-top:10px;
+    margin-left:5px;
+    padding:8px 6px;
+    border:1px solid grey;
+    height:98%;
+    width:100%;
+}
+
+.rightbox .btn-sub
+{
+    margin-left:80px;
+    margin-top:10px;
+    height:40px;
+    width:80px;
+    background:blue;
+    color:white;
+}
+
+.footer
+{
+    background:#000000;
+    grid-column-start:1;
+    grid-column-end:4;
+    height:280px;
+    margin-top:5px;
+    display:flex;
+    flex:1;
+    position:relative;
+}
+
+.footer-1
+{
+    background:#000000;
+    flex:1;
+    color:#ffffff;
+}
+
+.footer-1 h3
+{
+    background:#000000;
+    margin-top:20px;
+    margin-bottom:5px;
+    margin-left:10px;
+}
+
+.footer-1 p
+{
+    background:#000000;
+    margin:10px 20px;
+    padding:10px 20px;
+}
+
+
+.footer-2
+{
+    background:#000000;
+    flex:1;
+    color:#ffffff;
+}
+
+.footer-2 h3
+{
+    margin-top:10px;
+    background:#000000;    
+}
+
+.footer-2 ul li
+{
+    background:#000000;
+    list-style:none;
+    padding:10px 120px;
+}
+
+.footer-2 ul li:hover
+{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+
+.footer-3
+{
+    background:#000000;
+    flex:1;
+    color:#ffffff;
+}
+
+.footer-3 h3
+{
+    margin-top:10px;
+    background:#000000;    
+}
+
+.footer-3 ul li
+{
+    background:#000000;
+    list-style:none;
+    padding:7px 120px;
+}
+
+.footer-3 ul li:hover
+{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+.footer-bottom
+{
+    background:#000000;
+    width:100%;
+    height:50px;
+    position:absolute;
+    bottom:0px;
+}
+
+.footer-bottom p
+{
+    background:#000000;
+    text-align:center;
+    color:#ffffff;
+    line-height:50px;
+}

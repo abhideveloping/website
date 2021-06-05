@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/home.css"/>
+    
+    <title>Classic|Library Home</title>
+</head>
+<body>
+
+
+<!----- Header part has just started from here---->
+<div class="header">
+<div class="menu1">
+    <div class="submenu">Classic Librarys</div></div>
+
+
+<div class="menu2">
+<ul class="navbar">
+    <li><a href="home" style="background-color:#f54d0b;
+        color:#ffffff;
+        text-decoration:underline;
+        border-radius:16px;">Home</a></li>
+        
+    <li><a href="books">Books</a></li>
+    <li><a href="facilities">Facilities</a></li>
+    <li><a href="about">About</a></li>
+</ul>
+</div>
+
+
+<div class="menu3">
+    <button class="button1">Log in</button>
+    <button class="button2">Register</button>
+</div>
+</div>
+<!-------Header just ended over here ----->
+<!------- Slider will start from here ----->
+<div class="slider">
+</div>
+<!------ Slider has just ended from here ----->
+
+
+<!----- Main content divs will start from here --->
+<div class="main">
+    <div class="leftpanel">
+    <ul class="list">
+    <li><h3>Popular Books</h3></li>
+    <hr/>
+    <li>Think and Grow Rich</li>
+    <li>Influence</li>
+    <li>The Richest man in Babylon<li>
+    <li>How to win friends and influence people</li>
+    <li>Emotional Intelligence</li>
+    <li>Money Master the Game</li>
+    </ul>
+    
+    </div>
+
+
+<!---- Main content coding will start from here ---->
+
+    <div class="maincontent">
+
+        <div class="headline">
+            <h3>Recent Post</h3>
+        </div>
+
+        <div class="article1">
+        <div class="img1"></div>
+        <div class="read1">
+        <div class="write1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, ad vitae? Eligendi magnam velit facere ea repudiandae ullam neque odit, debitis sint minima veritatis deserunt labore consequuntur, vitae enim at quos doloremque ad? Eius, neque odio illum soluta ut repellendus consequuntur quae. Quam, animi architecto.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam numquam quasi autem quas, ducimus quo eos nulla commodi illum nesciunt alias sequi neque. Quam nesciunt impedit natus. Velit, dolores voluptas eaque facilis rem, accusamus, expedita vel ullam ipsum provident officiis repellat reiciendis debitis voluptatibus consectetur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ducimus enim provident quia corrupti minus est aliquid eum? Repudiandae veritatis, aliquid aliquam exercitationem at delectus ut distinctio laudantium cupiditate eius iusto officia quae. Officia necessitatibus odit doloremque vel. Cupiditate deserunt vero nam nesciunt saepe minus.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus blanditiis veniam facilis.
+        </div>
+        <a href="read1"><button class="more3">
+        
+        Read More</button></a>
+        </div>
+        </div>
+
+
+        <div class="article2">
+        <div class="img2"></div>
+        <div class="read2">
+        <div class="write2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quis odio corporis! Rerum maiores adipisci aut, ipsum tempore sequi facere et debitis molestias. Dolores soluta debitis quaerat facere non illum molestiae nobis tempora suscipit deserunt quo sequi qui nesciunt error, odit asperiores sapiente reprehenderit enim?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora modi aspernatur deserunt ducimus praesentium ipsum soluta saepe quaerat! Facere cumque mollitia quaerat facilis necessitatibus, nesciunt unde consequatur maiores? Atque ducimus, dicta officia labore amet aperiam suscipit totam explicabo? Similique aperiam eveniet praesentium accusamus doloribus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae praesentium aperiam vitae eius dignissimos quasi temporibus corporis nihil obcaecati ipsum sint alias deserunt magni, accusantium hic soluta repellat maiores error laudantium atque a. Tempora, dolor voluptatibus voluptatem non ad ut rem ea doloremque qui earum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum in tenetur?
+        </div>
+        <button class="more2">
+        <a href="read1"><button class="more3">
+        
+        Read More</button></a>
+        </div>
+        </div>
+        
+
+        <div class="article3">
+        <div class="img3"></div>
+        <div class="read3">
+        <div class="write3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat nihil, eligendi, delectus expedita perspiciatis officia perferendis, harum deserunt sapiente reiciendis quibusdam voluptatibus ullam? Ducimus libero eveniet similique quidem alias hic temporibus illum? Temporibus ducimus totam cum aliquam obcaecati deleniti eius incidunt, aspernatur placeat quisquam suscipit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, deleniti culpa. Distinctio tempora nulla ab reiciendis voluptate. Quia, quos placeat animi saepe minus amet ducimus asperiores, fugiat odit inventore mollitia consequatur? Odit eaque quae neque animi! Odio eligendi fugit delectus neque dicta expedita nisi mollitia?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non soluta ipsum commodi minima maxime omnis quisquam animi, ex labore amet illo expedita adipisci quo perspiciatis alias dolorem voluptas atque autem debitis sed quas. Debitis animi quaerat ipsam vel officiis non, beatae accusamus numquam hic tenetur!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa incidunt veritatis autem.
+        </div>
+        <a href="read1"><button class="more3">
+        
+        Read More</button></a>
+        
+        </div>
+        </div>
+
+    </div>
+
+<!----- Mai content cding will end from here ---->
+    <div class="rightpanel">
+    <div class="rightbox">
+    <h3>Subscribe</h3>
+    <hr/>
+    <form method="post" action="/home">
+    {% csrf_token %}
+    <table>
+    <tr>
+    <td><input type="text" id="name" name="name" placeholder="Name" autocomplete="off"></td>
+    <tr>
+    <tr>
+    <td><input type="email" id="email" name="email" placeholder="Email" autocomplete="off"></td>
+    </tr>
+    <tr>
+    <td>
+    <button class="btn-sub">Submit</button></td></tr>
+    </table>
+    </form>
+    </div>
+    </div>
+    <div class="footer">
+    <div class="footer-1">
+    <h3>Classic Library</h3>
+    <p>We Classic Library has great collection of books, specially non-fictional
+    intellectual books.<br/>We have 4,500 employees across india. We have branches in 26
+    States and our Head Office is in New Delhi.</p>
+    </div>
+    
+    <div class = "footer-2">
+    <ul>
+    <li><h3>Main Branches</h3></li>
+    <li>New Delhi</li>
+    <li>Kolkata</li>
+    <li>Chennai</li>
+    <li>Mumbai</li>
+    </ul>
+    
+    </div>
+    <div class = "footer-3">
+    <ul>
+    <li><h3>Other Locations</h3></li>
+    <li>Jamshedpur</li>
+    <li>Patna</li>
+    <li>Lucknow</li>
+    <li>Indore</li>
+    <li>Guwahati</li>
+    </div>
+    
+    <div class="footer-bottom">
+    <p>copyright &copy Abhinandan Tiwari | abhinandantiwari.com&trade; all right reserved</p>
+    </div>
+   
+    </div>
+
+</body>
+<script src="js/home.js"></script>
+</html>
